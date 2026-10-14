@@ -1,13 +1,13 @@
 {% set name = "argparse-manpage" %}
-{% set version = "4.7" %}
+{% set version = "4.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1deab76b212ac8753cbb67b9d2d2bc0949bbc338bb1cc3547f0890cb34108b32
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d55ce1c246479ddd82871170a8cc543a6831bb68c87a298e47f0663a9330b74f
 
 build:
   noarch: python
